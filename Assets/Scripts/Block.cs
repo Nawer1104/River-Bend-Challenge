@@ -28,8 +28,8 @@ public class Block : MonoBehaviour
         yield return new WaitForSeconds(1);
 
         GameManager.Instance.levels[GameManager.Instance.GetCurrentIndex()].blocks.Remove(this);
-        GameObject explosion = Instantiate(particleVFX, transform.position, transform.rotation);
-        Destroy(explosion, .75f);
+/*        GameObject explosion = Instantiate(particleVFX, transform.position, transform.rotation);
+        Destroy(explosion, .75f);*/
         Destroy(gameObject);
     }
 }
